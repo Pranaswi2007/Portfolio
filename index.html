@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranaswi Chembeti | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&family=Playfair+Display:wght@600;700;800&family=Sora:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <span class="logo-text">PC</span>
+            <div class="logo-glow"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Available for Opportunities</span>
+            </div>
+            <div class="hero-greeting">Hello, World! 👋</div>
+            <h1 class="hero-title">
+                I'm <span class="gradient-text" id="typed-name"></span>
+            </h1>
+            <div class="hero-roles">
+                <span class="role-prefix">A </span>
+                <span class="role-text" id="role-text"></span>
+                <span class="role-cursor">|</span>
+            </div>
+            <p class="hero-description">
+                B.Tech CSE 3rd year Student at Mohan Babu University · DSA Enthusiast · 
+                Data Analysis Lover · Cloud Learner · Infosys Springboard Intern
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#about" class="btn btn-outline">
+                    <span>Explore More</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/pranaswi-chembeti-b65439338/" target="_blank" class="social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Pranaswi2007" target="_blank" class="social-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:chembetipranaswi333@gmail.com" class="social-icon" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="avatar-container">
+                <div class="avatar-ring ring-1"></div>
+                <div class="avatar-ring ring-2"></div>
+                <div class="avatar-ring ring-3"></div>
+                <div class="avatar-core">
+                    <span class="avatar-initials">PC</span>
+                    <div class="avatar-glow"></div>
+                </div>
+                <div class="orbit-item orbit-1"><i class="fab fa-java"></i></div>
+                <div class="orbit-item orbit-2"><i class="fab fa-python"></i></div>
+                <div class="orbit-item orbit-3"><i class="fas fa-cloud"></i></div>
+                <div class="orbit-item orbit-4"><i class="fas fa-database"></i></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get To Know Me</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card main-card">
+                    <div class="card-glow"></div>
+                    <div class="about-avatar-small">
+                        <span>PC</span>
+                    </div>
+                    <h3>Pranaswi Chembeti</h3>
+                    <p class="about-role">BTech CSE · 3rd Year</p>
+                    <p class="about-university"><i class="fas fa-university"></i> Mohan Babu University</p>
+                    <div class="about-tags">
+                        <span class="tag">DSA</span>
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Cloud</span>
+                        <span class="tag">AI/ML</span>
+                    </div>
+                </div>
+                <div class="about-card story-card">
+                    <div class="card-glow"></div>
+                    <h3><i class="fas fa-user-astronaut"></i> My Story</h3>
+                    <p>
+                        Hey! I'm Pranaswi — a passionate CSE student who believes in building skills the right way. 
+                        I'm not about quick fixes or AI-generated shortcuts. I learn, I practice, I grow. 
+                    </p>
+                    <p>
+                        My journey started with mastering DSA and problem-solving on platforms like LeetCode and HackerRank. 
+                        Then I fell in love with the power of data — uncovering insights with Python and Power BI. 
+                        Now I'm exploring the cloud, one concept at a time.
+                    </p>
+                    <p>
+                        I believe every line of code I write teaches me something. That's my philosophy. 🚀
+                    </p>
+                </div>
+                <div class="about-card stat-card">
+                    <div class="card-glow"></div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="2">0</div>
+                            <div class="stat-label">Internships</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="2">0</div>
+                            <div class="stat-label">Hackathons</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="1">0</div>
+                            <div class="stat-label">Award Won</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Languages</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card platforms-card">
+                    <div class="card-glow"></div>
+                    <h3><i class="fas fa-code"></i> Active Platforms</h3>
+                    <div class="platform-list">
+                        <div class="platform-item">
+                            <i class="fas fa-code"></i>
+                            <span>LeetCode</span>
+                            <div class="platform-glow"></div>
+                        </div>
+                        <div class="platform-item">
+                            <i class="fab fa-hackerrank"></i>
+                            <span>HackerRank</span>
+                            <div class="platform-glow"></div>
+                        </div>
+                        <div class="platform-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                            <div class="platform-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-universe">
+
+                <div class="skills-category">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-code"></i></div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <div class="skill-pill">
+                            <span class="pill-icon java-icon"><i class="fab fa-java"></i></span>
+                            <span class="pill-name">Java</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-icon python-icon"><i class="fab fa-python"></i></span>
+                            <span class="pill-name">Python</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-icon cpp-icon"><i class="fas fa-terminal"></i></span>
+                            <span class="pill-name">C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Web & Database</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <div class="skill-pill">
+                            <span class="pill-icon html-icon"><i class="fab fa-html5"></i></span>
+                            <span class="pill-name">HTML</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-icon css-icon"><i class="fab fa-css3-alt"></i></span>
+                            <span class="pill-name">CSS</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-icon js-icon"><i class="fab fa-js"></i></span>
+                            <span class="pill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-icon db-icon"><i class="fas fa-database"></i></span>
+                            <span class="pill-name">DBMS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h3>Data & Cloud</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <div class="skill-pill">
+                            <span class="pill-icon bi-icon"><i class="fas fa-chart-pie"></i></span>
+                            <span class="pill-name">Power BI</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-icon da-icon"><i class="fas fa-chart-line"></i></span>
+                            <span class="pill-name">Data Analysis</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-icon cloud-icon"><i class="fas fa-cloud"></i></span>
+                            <span class="pill-name">Cloud</span>
+                            <span class="pill-badge">Learning</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-icon ai-icon"><i class="fas fa-brain"></i></span>
+                            <span class="pill-name">AI / ML</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Experience & <span class="gradient-text">Internships</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-dot">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-glow"></div>
+                        <div class="timeline-badge upcoming">Upcoming</div>
+                        <div class="timeline-header">
+                            <div class="company-logo infosys-logo">
+                                <i class="fas fa-infinity"></i>
+                            </div>
+                            <div>
+                                <h3>Virtual Intern</h3>
+                                <span class="company-name">Infosys Springboard</span>
+                            </div>
+                        </div>
+                        <p class="timeline-date"><i class="fas fa-calendar"></i> September 2025</p>
+                        <p class="timeline-desc">
+                            Selected for the prestigious Infosys Springboard Virtual Internship Program. 
+                            Excited to gain industry exposure and work on real-world problems with one of India's 
+                            leading technology companies.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="t-tag">Industry Experience</span>
+                            <span class="t-tag">Technology</span>
+                            <span class="t-tag">Selected ✓</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-dot">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-glow"></div>
+                        <div class="timeline-badge completed">Completed</div>
+                        <div class="timeline-header">
+                            <div class="company-logo smarted-logo">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div>
+                                <h3>AI & ML Intern</h3>
+                                <span class="company-name">SmartEd</span>
+                            </div>
+                        </div>
+                        <p class="timeline-date"><i class="fas fa-calendar"></i> Completed</p>
+                        <p class="timeline-desc">
+                            Completed an Artificial Intelligence and Machine Learning internship at SmartEd. 
+                            Gained hands-on experience with ML concepts, algorithms, and practical implementations 
+                            that deepened my understanding of data-driven solutions.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="t-tag">Artificial Intelligence</span>
+                            <span class="t-tag">Machine Learning</span>
+                            <span class="t-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements section" id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Wins</span>
+                <h2 class="section-title">Achievements & <span class="gradient-text">Awards</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="achievements-showcase">
+                <div class="achievement-main">
+                    <div class="trophy-container">
+                        <div class="trophy-glow"></div>
+                        <div class="trophy-rings">
+                            <div class="t-ring t-ring-1"></div>
+                            <div class="t-ring t-ring-2"></div>
+                        </div>
+                        <div class="trophy-icon">🏆</div>
+                        <div class="confetti-container" id="confetti"></div>
+                    </div>
+                    <div class="achievement-details">
+                        <div class="achievement-badge">
+                            <span class="badge-number">1st</span>
+                            <span class="badge-text">PRIZE</span>
+                        </div>
+                        <h3>Data Detective Competition</h3>
+                        <p class="achievement-sub">Power BI Data Visualization Challenge</p>
+                        <p class="achievement-desc">
+                            Won the 1st prize in the prestigious Data Detective competition, demonstrating 
+                            exceptional skills in data visualization and analysis using Microsoft Power BI. 
+                            Created compelling dashboards that told powerful data stories.
+                        </p>
+                        <div class="achievement-skills">
+                            <span class="a-skill"><i class="fas fa-chart-pie"></i> Power BI</span>
+                            <span class="a-skill"><i class="fas fa-chart-bar"></i> Data Visualization</span>
+                            <span class="a-skill"><i class="fas fa-search"></i> Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hackathons Section -->
+    <section class="hackathons section" id="hackathons">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Building & Competing</span>
+                <h2 class="section-title">Hackathon <span class="gradient-text">Battles</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="hackathons-grid">
+                <div class="hackathon-card">
+                    <div class="card-glow"></div>
+                    <div class="hack-number">01</div>
+                    <div class="hack-icon">
+                        <i class="fas fa-motorcycle"></i>
+                    </div>
+                    <h3>BlueRide</h3>
+                    <div class="hack-type">Ride-Sharing Platform</div>
+                    <p>
+                        Conceptualised and started building a ride-sharing platform inspired by Rapido and Uber.
+                        Our team completed the frontend — the booking flow, user interface, and core screens are ready.
+                        The backend is currently in progress as we continue to build it out together.
+                    </p>
+                    <div class="hack-tech">
+                        <span>Frontend ✓ Done</span>
+                        <span>Backend 🔧 In Progress</span>
+                        <span>Team Build</span>
+                    </div>
+                    <div class="hack-footer">
+                        <i class="fas fa-users"></i> Team Project
+                        <span class="hack-dot"></span>
+                        <i class="fas fa-code-branch"></i> Hackathon
+                    </div>
+                </div>
+
+                <div class="hackathon-card">
+                    <div class="card-glow"></div>
+                    <div class="hack-number">02</div>
+                    <div class="hack-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Trust Layer</h3>
+                    <div class="hack-type">Social Media Safety Platform</div>
+                    <p>
+                        Proposed a platform where users can report social media harassment, fake news,
+                        and viral misinformation. Our team designed and pitched the full concept in the first round.
+                        Though we weren't selected for round two, the idea remains something we strongly believe in
+                        and plan to build.
+                    </p>
+                    <div class="hack-tech">
+                        <span>Concept Designed</span>
+                        <span>Round 1 Pitched</span>
+                        <span>Social Impact</span>
+                    </div>
+                    <div class="hack-footer">
+                        <i class="fas fa-users"></i> Team Project
+                        <span class="hack-dot"></span>
+                        <i class="fas fa-lightbulb"></i> Planned Build
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="card-glow"></div>
+                        <h3>Let's build something together!</h3>
+                        <p>
+                            I'm always open to interesting conversations, collaborations, 
+                            and opportunities. Whether it's about tech, data, or just a friendly chat — reach out!
+                        </p>
+                        <div class="contact-links">
+                            <a href="mailto:chembetipranaswi333@gmail.com" class="contact-link">
+                                <div class="contact-link-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <span class="contact-link-label">Email</span>
+                                    <span class="contact-link-value">chembetipranaswi333@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/pranaswi-chembeti-b65439338/" target="_blank" class="contact-link">
+                                <div class="contact-link-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                                <div>
+                                    <span class="contact-link-label">LinkedIn</span>
+                                    <span class="contact-link-value">Pranaswi Chembeti</span>
+                                </div>
+                            </a>
+                            <a href="https://github.com/Pranaswi2007" target="_blank" class="contact-link">
+                                <div class="contact-link-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div>
+                                    <span class="contact-link-label">GitHub</span>
+                                    <span class="contact-link-value">Pranaswi2007</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <div class="contact-form-card">
+                        <div class="card-glow"></div>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" placeholder="What's your name?" required>
+                                <div class="input-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Email</label>
+                                <input type="email" placeholder="your@email.com" required>
+                                <div class="input-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea placeholder="What would you like to say?" rows="5" required></textarea>
+                                <div class="input-line"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="footer-content">
+            <div class="footer-logo">PC</div>
+            <p class="footer-tagline">Crafted with ❤️ by Pranaswi Chembeti</p>
+            <p class="footer-quote">"Learning one concept at a time, building one skill at a time."</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/pranaswi-chembeti-b65439338/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Pranaswi2007" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:chembetipranaswi333@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="footer-copy">© 2026 Pranaswi Chembeti · All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
